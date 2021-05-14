@@ -7,16 +7,7 @@
 
 import SwiftUI
 
-enum ActiveSheet: Identifiable {
-    case encoding, video
-    
-    var id: Int {
-        hashValue
-    }
-}
-
 struct SelectVideoView: View {
-    @State private var activeSheet: ActiveSheet?
     @State private var isShowingEncoding = false
     @State private var isShowingMediaPicker = false
     @State private var url: URL?
