@@ -1,5 +1,5 @@
 //
-//  ImagePickerView.swift
+//  MediaPickerView.swift
 //  VideoEncoderSwiftUI
 //
 //  Created by Samet Macit on 14.05.2021.

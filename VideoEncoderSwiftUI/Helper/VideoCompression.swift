@@ -1,4 +1,6 @@
-
+//  
+//  VideoCompression.swift
+//
 //  Created by Diego Perini, TestFairy
 //  Edited by Samet Macit on 14.05.2021.
 //  License: Public Domain
@@ -247,7 +249,7 @@ func compressh264VideoInBackground(videoToCompress: URL, destinationPath: URL, s
             var frameCount = 0
             var videoDone = false
             var audioDone = false
-            var i: CGFloat = 0
+
             while !videoDone || !audioDone {
                 // Check for Writer Errors (out of storage etc.)
                 if writer.status == AVAssetWriter.Status.failed {
@@ -283,9 +285,8 @@ func compressh264VideoInBackground(videoToCompress: URL, destinationPath: URL, s
                         let timeSecond = CMTimeGetSeconds(timeStamp)
                         let per = timeSecond / duration.seconds
                         progressHandler(CGFloat(per))
-                        print("per",per)
                         frameCount += 1
-//                        print("Encoding frame: ", frameCount)
+                        print("Encoding frame: ", frameCount)
                         
                         autoreleasepool {
                             let presentationTime = CMSampleBufferGetPresentationTimeStamp(vBuffer)
