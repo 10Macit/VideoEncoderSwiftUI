@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		73220BA2264EC13200A5D3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BA1264EC13200A5D3AC /* AppDelegate.swift */; };
 		73220BA4264EC13200A5D3AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BA3264EC13200A5D3AC /* SceneDelegate.swift */; };
-		73220BA6264EC13200A5D3AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BA5264EC13200A5D3AC /* ContentView.swift */; };
+		73220BA6264EC13200A5D3AC /* SelectVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BA5264EC13200A5D3AC /* SelectVideoView.swift */; };
 		73220BA8264EC13500A5D3AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73220BA7264EC13500A5D3AC /* Assets.xcassets */; };
 		73220BAB264EC13500A5D3AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73220BAA264EC13500A5D3AC /* Preview Assets.xcassets */; };
 		73220BAE264EC13500A5D3AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73220BAC264EC13500A5D3AC /* LaunchScreen.storyboard */; };
+		73220BB7264EC32C00A5D3AC /* EncodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BB6264EC32C00A5D3AC /* EncodingView.swift */; };
+		73220BBA264EC61100A5D3AC /* VideoCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BB9264EC61100A5D3AC /* VideoCompression.swift */; };
+		73220BBC264ECD4900A5D3AC /* MediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BBB264ECD4900A5D3AC /* MediaPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73220B9E264EC13200A5D3AC /* VideoEncoderSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEncoderSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73220BA1264EC13200A5D3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73220BA3264EC13200A5D3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73220BA5264EC13200A5D3AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73220BA5264EC13200A5D3AC /* SelectVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVideoView.swift; sourceTree = "<group>"; };
 		73220BA7264EC13500A5D3AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73220BAA264EC13500A5D3AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73220BAD264EC13500A5D3AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73220BAF264EC13500A5D3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73220BB6264EC32C00A5D3AC /* EncodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingView.swift; sourceTree = "<group>"; };
+		73220BB9264EC61100A5D3AC /* VideoCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCompression.swift; sourceTree = "<group>"; };
+		73220BBB264ECD4900A5D3AC /* MediaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		73220BA0264EC13200A5D3AC /* VideoEncoderSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				73220BB8264EC61100A5D3AC /* Helper */,
+				73220BB5264EC30D00A5D3AC /* Views */,
 				73220BA1264EC13200A5D3AC /* AppDelegate.swift */,
 				73220BA3264EC13200A5D3AC /* SceneDelegate.swift */,
-				73220BA5264EC13200A5D3AC /* ContentView.swift */,
 				73220BA7264EC13500A5D3AC /* Assets.xcassets */,
 				73220BAC264EC13500A5D3AC /* LaunchScreen.storyboard */,
 				73220BAF264EC13500A5D3AC /* Info.plist */,
@@ -73,6 +80,24 @@
 				73220BAA264EC13500A5D3AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73220BB5264EC30D00A5D3AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73220BA5264EC13200A5D3AC /* SelectVideoView.swift */,
+				73220BB6264EC32C00A5D3AC /* EncodingView.swift */,
+				73220BBB264ECD4900A5D3AC /* MediaPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73220BB8264EC61100A5D3AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				73220BB9264EC61100A5D3AC /* VideoCompression.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73220BBA264EC61100A5D3AC /* VideoCompression.swift in Sources */,
 				73220BA2264EC13200A5D3AC /* AppDelegate.swift in Sources */,
 				73220BA4264EC13200A5D3AC /* SceneDelegate.swift in Sources */,
-				73220BA6264EC13200A5D3AC /* ContentView.swift in Sources */,
+				73220BA6264EC13200A5D3AC /* SelectVideoView.swift in Sources */,
+				73220BBC264ECD4900A5D3AC /* MediaPickerView.swift in Sources */,
+				73220BB7264EC32C00A5D3AC /* EncodingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +319,7 @@
 				DEVELOPMENT_TEAM = 88YT5F7MA7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VideoEncoderSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +341,7 @@
 				DEVELOPMENT_TEAM = 88YT5F7MA7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VideoEncoderSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
