@@ -142,8 +142,8 @@ func compressh264VideoInBackground(videoToCompress: URL, destinationPath: URL, s
         let isVideoPortrait = abs(videoTrack.naturalSize.width) < abs(videoTrack.naturalSize.height)
 
         let videoOutputSettings: Dictionary<String, Any> = [
-            AVVideoWidthKey : isVideoPortrait ? videoTrack.naturalSize.width : size!.width,
-            AVVideoHeightKey : isVideoPortrait ? videoTrack.naturalSize.height : size!.height,
+            AVVideoWidthKey : !isVideoPortrait ? videoTrack.naturalSize.width : size!.width,
+            AVVideoHeightKey : !isVideoPortrait ? videoTrack.naturalSize.height : size!.height,
             AVVideoCodecKey : AVVideoCodecType.h264,
             AVVideoCompressionPropertiesKey : videoCompressionProps
         ]
