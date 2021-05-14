@@ -26,7 +26,7 @@ struct EncodingView: View {
                 }
             })
             .alert(isPresented: $isShowingAlert) {
-                Alert(title: Text("Saved succesfully"),
+                Alert(title: Text("It’s completed."),
                       message: nil,
                       dismissButton: .default(Text("Ok")) {
                         self.presentationMode.wrappedValue.dismiss()
