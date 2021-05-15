@@ -16,6 +16,7 @@
 		73220BB7264EC32C00A5D3AC /* EncodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BB6264EC32C00A5D3AC /* EncodingView.swift */; };
 		73220BBA264EC61100A5D3AC /* VideoCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BB9264EC61100A5D3AC /* VideoCompression.swift */; };
 		73220BBC264ECD4900A5D3AC /* MediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BBB264ECD4900A5D3AC /* MediaPickerView.swift */; };
+		73220BBF264FC2E800A5D3AC /* EncodingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73220BBE264FC2E800A5D3AC /* EncodingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		73220BB6264EC32C00A5D3AC /* EncodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingView.swift; sourceTree = "<group>"; };
 		73220BB9264EC61100A5D3AC /* VideoCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCompression.swift; sourceTree = "<group>"; };
 		73220BBB264ECD4900A5D3AC /* MediaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
+		73220BBE264FC2E800A5D3AC /* EncodingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		73220BA0264EC13200A5D3AC /* VideoEncoderSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				73220BBD264FC2D800A5D3AC /* ViewModels */,
 				73220BB8264EC61100A5D3AC /* Helper */,
 				73220BB5264EC30D00A5D3AC /* Views */,
 				73220BA1264EC13200A5D3AC /* AppDelegate.swift */,
@@ -98,6 +101,14 @@
 				73220BB9264EC61100A5D3AC /* VideoCompression.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		73220BBD264FC2D800A5D3AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				73220BBE264FC2E800A5D3AC /* EncodingViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				73220BA6264EC13200A5D3AC /* SelectVideoView.swift in Sources */,
 				73220BBC264ECD4900A5D3AC /* MediaPickerView.swift in Sources */,
 				73220BB7264EC32C00A5D3AC /* EncodingView.swift in Sources */,
+				73220BBF264FC2E800A5D3AC /* EncodingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

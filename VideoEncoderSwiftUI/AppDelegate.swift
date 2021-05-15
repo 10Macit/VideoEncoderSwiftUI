@@ -34,3 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+ All the permissions required for this whole flow will have to be requested from the user as needed. 
+ 
+ When user tap button open video gallery
+ Start encoding video
+    - Your encoding system must have single progress for audio + video export.
+    - Once the encoding is done, the output video will be saved in the users video album on the phone and show a message that it’s completed.
+    - After completing the process, the app will revert back to the opening screen so that the user can start over.
+    - One detail to note is, the max video duration is 20 seconds. If the video selected is more than 20 seconds, only the first 20 seconds will be encoded and saved.  
+ */
