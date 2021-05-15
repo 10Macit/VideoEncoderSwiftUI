@@ -20,8 +20,18 @@ class EncodingViewModel: EncodingViewModelProtocol, ObservableObject {
     @Published var alertMessage: String = ""
     
     private var successMessage: String  = "It's completed"
+    // 960 height, 540 width pixels, portrait mode as frame size
     private var defaultSize = CompressionSize(width: 540 , height: 960)
     private var tempFilePath: String = "compressed.mp4"
+    
+    private let defaultCompressionConfig = CompressionConfig(
+        videoBitrate: 1024 * 122,
+        videomaxKeyFrameInterval: 1,
+        avVideoProfileLevel: AVVideoProfileLevelH264High41,
+        audioSampleRate: 44100,
+        audioBitrate: 64000,
+        videoExpectedSourceFrameRateKey: 24
+    )
     
     func encode(with url: URL) {
         // Declare destination path and remove anything exists in it
@@ -34,7 +44,7 @@ class EncodingViewModel: EncodingViewModelProtocol, ObservableObject {
             destinationPath: destinationPath,
             size: defaultSize,
             compressionTransform: .keepSame,
-            compressionConfig: .defaultConfig,
+            compressionConfig: defaultCompressionConfig,
             completionHandler: { path in
                 self.saveVideoToAlbum(path.absoluteURL) { error in
                     if let error = error {

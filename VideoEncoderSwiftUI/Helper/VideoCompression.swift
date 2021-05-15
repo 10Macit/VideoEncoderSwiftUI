@@ -45,15 +45,6 @@ struct CompressionConfig {
     let audioSampleRate: Int
     let audioBitrate: Int
     let videoExpectedSourceFrameRateKey: Int
-    
-    static let defaultConfig = CompressionConfig(
-        videoBitrate: 1024 * 122,
-        videomaxKeyFrameInterval: 1,
-        avVideoProfileLevel: AVVideoProfileLevelH264High41,
-        audioSampleRate: 44100,
-        audioBitrate: 64000,
-        videoExpectedSourceFrameRateKey: 24
-    )
 }
 
 // Video Size
